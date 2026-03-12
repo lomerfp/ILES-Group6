@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 
 export default function Login() {
   const navigate = useNavigate()
-  const [role, setRole] = useState('student') // student, supervisor, registrar
+  const [role, setRole] = useState('student') // student, supervisor, registrar only 
   const [formData, setFormData] = useState({
     email: '',
     password: ''
