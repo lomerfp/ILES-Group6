@@ -248,7 +248,7 @@ export default function Register() {
             </div>
           )}
 
-          <button type="submit">Register</button>
+          <button type="submit">SignUp</button>
         </form>
 
         <p style={{ marginTop: '20px', textAlign: 'center' }}>
