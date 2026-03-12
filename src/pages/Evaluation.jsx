@@ -11,7 +11,7 @@ export default function Evaluation() {
       navigate('/login')
     }
 
-    // Load sample evaluations
+    // Load sample evaluations for students marks
     setEvaluations([
       {
         id: 1,
@@ -20,7 +20,7 @@ export default function Evaluation() {
         title: 'System Architecture Meeting',
         rating: 4.5,
         comments: 'Great participation! You provided excellent insights on the system design.',
-        category: 'Technical Skills'
+        category: 'Technical Skills.'
       },
       {
         id: 2,
@@ -60,7 +60,7 @@ export default function Evaluation() {
         <h3>Evaluation History</h3>
         {evaluations.length === 0 ? (
           <p style={{ color: '#999', textAlign: 'center', padding: '40px' }}>
-            No evaluations yet. Keep working and your supervisors will evaluate your performance.
+            I just wanted to let you know that there are no evaluations yet. Keep working, and your supervisors will evaluate your performance.
           </p>
         ) : (
           <div style={{ display: 'grid', gap: '20px', marginTop: '20px' }}>
