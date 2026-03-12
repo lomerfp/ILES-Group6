@@ -19,7 +19,7 @@ export default function Dashboard() {
     return <div>Loading...</div>
   }
 
-  // Route to role-specific dashboard
+  // Route to role-specific dashboard for supervisor
   if (role === 'student') {
     return <StudentDashboard />
   } else if (role === 'supervisor') {
