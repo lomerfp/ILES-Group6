@@ -16,7 +16,7 @@ export default function AdminPanel() {
       navigate('/login')
     }
 
-    // Load sample data
+    // Load sample data for students
     setStudents([
       { id: 1, name: 'Alice Johnson', email: 'alice@example.com', studentId: 'STU001', course: 'CSC101', status: 'Active' },
       { id: 2, name: 'Bob Smith', email: 'bob@example.com', studentId: 'STU002', course: 'CSC101', status: 'Active' },
