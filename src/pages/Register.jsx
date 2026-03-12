@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 
 export default function Register() {
   const navigate = useNavigate()
-  const [role, setRole] = useState('student') // student, supervisor, registrar
+  const [role, setRole] = useState('student') // student, supervisor, registrar only
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
