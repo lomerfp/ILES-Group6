@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+nav {
+  background: #34495e;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  background: #2c3e50;
+  transform: translateY(-1px);
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%;
+  flex: 1;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+section h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+section h3 {
+  color: #34495e;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section h4 {
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+section p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="date"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+  color: #bbb;
+  font-size: 0.85rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Forgot Password Button */
+.forgot-password-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forgot-password-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.forgot-password-btn:hover {
+  background: #c0392b;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dashboard-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.dashboard-card p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.dashboard-card a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.dashboard-card a:hover {
+  background: white;
+  color: #667eea;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+table thead {
+  background: #2c3e50;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+table tr:hover {
+  background: #f9f9f9;
+}
+
+table th {
+  font-weight: 600;
+}
+
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #95a5a6;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+.tab-btn.active {
+  background: #3498db;
+}
+
+.tab-btn:hover {
+  background: #34495e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    gap: 5px;
+  }
+
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  main {
+    margin: 15px auto;
+  }
+
+  section {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+}
+

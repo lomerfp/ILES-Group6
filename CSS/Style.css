@@ -26,3 +26,22 @@ nav a {
 section {
     padding: 40px;
 }
+
+.forgot-password-container {
+    margin-top: 30px;
+}
+
+.forgot-password-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+    background: #c0392b;
+}
